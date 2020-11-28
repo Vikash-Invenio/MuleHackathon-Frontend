@@ -1,0 +1,298 @@
+#textmsg{
+   border-width:0px;
+   border:none;
+   box-shadow:none; 
+   widows: 350px; ;
+  
+}
+
+
+
+#chat_header{
+   position: fixed;
+   right:70px; 
+   margin-bottom: 0%;
+   border-top-left-radius:5px;
+   border-top-right-radius:5px; 
+   padding: 0%;
+   display: table;
+   width:350px;
+   bottom:522px ;
+   font-size:20px;
+   background-color:navy; 
+}
+#modal-content button[type = clear]{
+   color: navy;
+   position: relative;
+   background-color:lavender ;
+   border: none;
+   
+ 
+}
+
+#chat_footer{
+    position: fixed;
+    right:70px; 
+    bottom:95px;
+    height: 30px;
+    width: 350px;
+}   
+#input-text{
+   right: -4px;
+   position: relative;
+   bottom:-2px;
+   height: 30px;
+   width: 322px;
+   background-color:white;
+   background: #f4f7f9; 
+   padding-top:10px;
+   padding-right:0px;
+   padding-bottom:10px;
+   padding-left:15px;
+   border:none;
+   resize:none;
+   outline:none;
+   border:1px solid #ccc;
+   color:navy;
+   border-top:none;
+   border-bottom-right-radius:5px;
+   border-bottom-left-radius:5px;
+   overflow:hidden;  
+}
+/* #input-button{
+   bottom:20px;
+   height: 22px;
+   width: 30px;
+   right: 300px;
+   background-color:white;
+} */
+
+#chatlogs{
+   position: fixed;
+   right:70px;
+   bottom:90px;   
+   display: block; 
+   height:400px;
+   width :318px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   background-color: lightblue;
+   border: lightblue;
+   padding: 16px;
+}
+/* #chatbot{
+   position:fixed;
+   right:40px;
+   bottom:40px;
+   margin-bottom:10px;
+   margin-right:10px;
+} */
+ #ChatBot{
+    position: fixed;
+    height:545px ;
+    width: 350px;
+    right:70px;
+    bottom: 70px;
+    border: none  ;
+    background-color:lightblue;
+    border-color:lightblue ;
+    box-shadow: 0px 5px 35px 9px #ccc;
+
+    
+}
+
+
+
+#botname,#bot_image{
+   display:table-cell;
+   vertical-align:middle;
+}
+#botname{
+   color: white;
+   padding-top: 10%;
+   
+}
+/* #close{
+
+   color:black;
+   float:right;
+   cursor: pointer;
+   font-size: 25px;
+
+} */
+
+.modal-content { 
+   background-color: rgba(0,0,0,.0) !important; 
+   border: none !important;
+   width: 150px;
+}
+#chatdone{
+    display: none;
+    color:white;
+    background-color: rgba(6, 45, 155, 0.548);
+    padding: 2%;
+    border-radius: 5%;
+}
+#bot_image{
+   position: relative;
+   width: 500px;
+   height:70px;
+   border: none;
+   box-shadow: 0 0 0 0 rgba(52,216,249, 0.7);
+   border-radius: 100%;
+   /* background-image: url('images/Genie.jpg'); */
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+}
+
+
+#chatlogs::-webkit-scrollbar-track {
+   border: 1px solid lightblue;
+   padding: 2px 0;
+   background-color: lightblue;
+}
+ 
+#chatlogs::-webkit-scrollbar {
+   width: 6px;
+}
+ 
+#chatlogs::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   box-shadow: inset 0 0 6px  #2232b9 ;
+   background-color:  #2232b9;
+   border: 1px solid rgb(241, 235, 235);
+}
+.UserMsg{
+   /* position: absolute ; */
+   background:white;
+   padding:10px 15px 10px 15px;  
+   color: navy;
+   max-width:75%;
+   margin-left: 45%;
+   float:right;
+   white-space: initial;
+   word-wrap:break-word;
+   justify-content: flex-end;
+   vertical-align: text-top;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight:bold;
+   overflow: auto;  
+   margin-left:10px; 
+   position:relative;
+   margin-bottom:20px;
+   border-radius:30px;
+  
+}
+.botMsg{
+   /* position: absolute; */
+   background:navy;
+   padding:10px 15px 10px 15px;  
+   color:white;
+   max-width:75%;
+   float:left;
+   margin-right: 30%;
+   white-space: initial;
+   word-wrap:break-word;
+   line-break: auto;
+   justify-content: flex-end;
+   vertical-align:text-bottom;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight:bold;
+   overflow: auto;
+   margin-left:10px; 
+   position:relative;
+   margin-bottom:20px;
+   margin-top: 10px;
+   border-radius:30px;
+
+}
+
+.form{
+   color: #2232b9;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight:bolder;
+   left: 20px;
+   width: 240px;
+   bottom: -200px;
+    margin: 60px auto 30px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 
+        0 0 1px rgba(0, 0, 0, 0.3), 
+        0 3px 7px rgba(0, 0, 0, 0.3), 
+        inset 0 1px rgba(255,255,255,1),
+        inset 0 -3px 2px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    background: linear-gradient(#eeefef, #ffffff 10%);
+}
+
+.form input[type=email],
+.form input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    width:200px;
+    padding: 10px 18px 10px 10px;
+    border: none; 
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.1),
+        inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color:black;
+    transition: color 0.3s ease-out;
+}
+
+.form button[type= skip]{
+   height: 50px;
+   width: 108px;
+   color: white;
+   background-color: indigo ;
+   padding-right: 10px 18px 10px 10px;
+   border: none;
+   border-radius: 10px;
+   margin-left: 15px;
+}
+
+.form button[type= submit]{
+   height: 50px;
+   width: 108px;
+   background-color:yellowgreen ;
+   padding-right: 10px 18px 10px 10px;
+   border: none;
+   border-radius: 10px;
+  
+}
+
+
+/* .chatdelete{
+   margin: 2%;
+   background-color: #2232b9;
+   color: #fff;
+   font-family: cursive;
+   font-weight: bold;
+} */
+
+/* .botimg{
+   position: relative;
+   width:50px;
+   height:30px;
+   border: none;
+   box-shadow: 0 0 0 0 rgba(52,216,249, 0.7);
+   border-radius: 100%;
+   /* background-image: url('images/Genie.jpg'); */
+   /* background-size:100% 100%;
+   background-repeat: no-repeat;
+   float: left;
+} */ 
+
+@media only screen and (min-width: 50px) and (max-width: 600px){
+     .Chat-icon {
+           position: fixed;
+           width: 50px;
+           height: 50px;
+         }
+ 
+}
+ 
